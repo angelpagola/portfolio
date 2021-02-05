@@ -1,0 +1,60 @@
+@import "../mixin";
+.home__background {
+    position: relative;
+    background-image: url("../images/slider-2.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    height: 100vh;
+}
+
+.home__background::before {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 51, 51, 0.3);
+}
+
+.home {
+    position: relative;
+    .home__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: flex;
+        .home__image {
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            .home__image-img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+        .home__description {
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            p {
+                /* margin: -5px; */
+            }
+            .texto__1,
+            .texto__3 {
+                font-size: 36px;
+                color: $color-white;
+            }
+            .texto__2 {
+                font-size: 40px;
+                color: $color-secundario;
+                font-weight: $densidad-bolder;
+            }
+        }
+    }
+}

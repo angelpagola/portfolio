@@ -1,0 +1,26 @@
+@mixin crea-caja {
+    background: #fbfbfb;
+    margin: 10px 0;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+@mixin crea-caja-hover {
+    -webkit-box-shadow: 0 0px 15px 0.1px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0px 15px 0.1px rgba(0, 0, 0, 0.7);
+    -webkit-transform: scale(1.003);
+    -ms-transform: scale(1.003);
+    transform: scale(1.003);
+}
+
+@mixin box-shadow {
+    -webkit-box-shadow: 0 0 10px 1px #4b4c4d;
+    box-shadow: 0 0 10px 1px #4b4c4d;
+}
+
+@mixin aliniacion-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

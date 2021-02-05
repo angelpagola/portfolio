@@ -1,0 +1,38 @@
+.about {
+    .about__content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: space-between;
+        .about__description {
+            .columna__texto {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            .btn__link {
+                display: block;
+                background-color: $color-primario;
+                color: $color-white;
+                font-size: 20px;
+                font-weight: $densidad-500;
+                padding: 10px;
+                width: 200px;
+                text-align: center;
+                border-radius: 5px;
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+        .about__image {
+            height: 300px;
+            .about__image-img {
+                display: flex;
+                margin: auto;
+                width: 50%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+}

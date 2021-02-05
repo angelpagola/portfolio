@@ -1,0 +1,97 @@
+/* colors */
+
+$primary-color: #dc143c;
+$primary-color-opacity: rgba(220, 20, 60, 0.5);
+$secondary-color: #aa66cc;
+$secondary-color-dark: #9933cc;
+$success-color: #00c851;
+$success-color-dark: #007e33;
+$danger-color: #ff4444;
+$danger-color-dark: #cc0000;
+$warning-color: #ffbb33;
+$warning-color-dark: #ff8800;
+$info-color: #33b5e5;
+$info-color-dark: #0099cc;
+$default-color: #2bbbad;
+$default-color-dark: #00695c;
+$elegant-color: #2e2e2e;
+$elegant-color-dark: #212121;
+$stylish-color: #4b515d;
+$stylish-color-dark: #3e4551;
+$unique-color: #3f729b;
+$unique-color-dark: #1c2331;
+$special-color: #37474f;
+$special-color-dark: #263238;
+$color-black-opacity:rgba(0, 0, 0, .3);
+$color-black-opacity-full:rgba(0, 0, 0, .1);
+$color-gradient:linear-gradient(#fff 0%, #f6f6f6 47%, gainsboro 100%);
+
+/* color principales */
+
+$color-primario:#36bed9;
+$color-secundario:#f39422;
+$color-terciario:#293a80;
+$color-white:#f5f9fa;
+$color-black:#323333;
+
+/*color de bordes*/
+
+$border-color:#333;
+$border-color-opacity:rgba(51, 51, 51, .5);
+$header-color:$color-primario;
+$footer-color:radial-gradient(circle at 50% 50%, #fcfcfa 0, #eeeef1 50%, #e0e0e8 100%);
+
+/* fuente tipo de letra*/
+
+$fuente-roboto: 'Roboto',
+sans-serif;
+$fuente-lato:'Lato',
+sans-serif;
+$fuente-nunito: 'Nunito Sans',
+sans-serif;
+
+/* fuente tamaño de letras */
+
+$fuente-logo:26px;
+$fuente-big:40px;
+$fuente-titulo:24px;
+$fuente-subtitulo:20px;
+$fuente-texto:16px;
+$fuente-alternativo:12px;
+$fuente-minimo:10px;
+
+/*Fuente-icons*/
+
+$fuente-icon-big:22px;
+$fuente-icon-medium:18px;
+$fuente-icon-small:14px;
+
+/*Densiddad de las fuentes*/
+
+$densidad-normal:normal;
+$densidad-bold:bold;
+//relativos al padre
+$densidad-lighter:lighter;
+$densidad-bolder:bolder;
+// Valores globales 
+$densidad-inherit:inherit;
+$densidad-initial:initial;
+$densidad-unset:unset;
+//valores númericos
+$densidad-100:100;
+$densidad-200:200;
+$densidad-300:300;
+$densidad-400:400;
+$densidad-500:500;
+$densidad-600:600;
+$densidad-700:700;
+$densidad-800:800;
+$densidad-900:900;
+
+/*Tamaño header*/
+
+$header:60px;
+
+/*Tamaño footer*/
+
+$footer:80px;

@@ -1,0 +1,29 @@
+.services__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .service__item {
+        background-color: $color-primario;
+        text-align: center;
+        padding: 40px 0;
+        i {
+            font-size: 30px;
+            font-weight: $densidad-bold;
+            margin-bottom: 20px;
+        }
+        .service__item-titulo {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: $color-black;
+        }
+        .service__item-text {
+            font-size: 16px;
+        }
+    }
+    .service__item:hover>i {
+        color: $color-secundario;
+    }
+    /* .service__item:hover {
+        border-bottom: 5px solid $color-secundario;
+    } */
+}
