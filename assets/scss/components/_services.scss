@@ -1,3 +1,4 @@
+@import "../mixin";
 .services__content {
     display: flex;
     flex-wrap: wrap;
@@ -8,10 +9,12 @@
         padding: 40px 20px;
         box-sizing: border-box;
         margin-bottom: 20px;
+        transition: all .5s;
         i {
-            font-size: 30px;
+            font-size: 40px;
             font-weight: $densidad-bold;
             margin-bottom: 20px;
+            transition: all .5s;
         }
         .service__item-titulo {
             font-size: 24px;
@@ -23,9 +26,13 @@
         }
     }
     .service__item:hover>i {
-        color: $color-secundario;
+        color: $color-white;
     }
-    /* .service__item:hover {
+    /*  .service__item:hover {
+        @include box-shadow;
+    } */
+    /* .service__item:hover::after {
+        
         border-bottom: 5px solid $color-secundario;
     } */
 }

@@ -14,15 +14,27 @@
         background-color: $color-primario;
         border-radius: 20px;
         @include box-shadow;
+        transition: all .5s;
         margin-bottom: 20px;
         i {
             font-size: 60px;
             color: $color-white;
             margin-bottom: 20px;
+            transition: all .5s;
         }
         .social__item-desc {
             font-size: 24px;
             color: $color-white;
+            transition: all .5s;
         }
+    }
+    .social__item:hover {
+        background-color: $color-white;
+    }
+    .social__item:hover>i {
+        color: $color-black;
+    }
+    .social__item:hover>.social__item-desc {
+        color: $color-black;
     }
 }

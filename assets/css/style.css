@@ -49,7 +49,7 @@ section .container .section__title {
 section .container .section__title::after {
   content: "";
   display: block;
-  width: 150px;
+  width: 200px;
   height: 5px;
   background: #36bed9;
   margin: 0 auto 40px;
@@ -57,7 +57,7 @@ section .container .section__title::after {
 section .container .section__title-black::after {
   content: "";
   display: block;
-  width: 150px;
+  width: 200px;
   height: 5px;
   background: #f5f9fa;
   margin: 0 auto 40px;
@@ -80,6 +80,29 @@ section .container .section__texto {
   padding: 40px 0;
 }
 
+.btn__link {
+  display: block;
+  background-color: #36bed9;
+  color: #f5f9fa;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.btn__link i {
+  margin-right: 5px;
+}
+
+.btn__link:hover {
+  background-color: #f39422;
+}
+
+/* .main {
+    overflow: hidden;
+} */
 .column__50 {
   width: 49%;
 }
@@ -100,24 +123,6 @@ section .container .section__texto {
   /*     color: $color-secundario; */
 }
 
-.btn__link {
-  display: block;
-  background-color: #36bed9;
-  color: #f5f9fa;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 10px;
-  width: 200px;
-  text-align: center;
-  border-radius: 5px;
-}
-.btn__link i {
-  margin-right: 5px;
-}
-
-/* .main {
-    overflow: hidden;
-} */
 /*Estilos del menu y navegador*/
 .main-header {
   display: flex;
@@ -256,7 +261,7 @@ main {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(50, 51, 51, 0.3);
+  background-color: rgba(50, 51, 51, 0.75);
 }
 
 .home {
@@ -268,10 +273,13 @@ main {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
 }
 .home .home__content .home__image {
-  height: 250px;
-  width: 250px;
+  height: 270px;
+  width: 270px;
   border-radius: 50%;
 }
 .home .home__content .home__image .home__image-img {
@@ -286,16 +294,13 @@ main {
   justify-content: center;
   flex-direction: column;
 }
-.home .home__content .home__description p {
-  /* margin: -5px; */
-}
 .home .home__content .home__description .texto__1,
 .home .home__content .home__description .texto__3 {
-  font-size: 36px;
+  font-size: 40px;
   color: #f5f9fa;
 }
 .home .home__content .home__description .texto__2 {
-  font-size: 40px;
+  font-size: 60px;
   color: #f39422;
   font-weight: bolder;
 }
@@ -311,7 +316,7 @@ main {
   margin-bottom: 20px;
 }
 .about .about__content .about__image {
-  height: 300px;
+  height: 280px;
 }
 .about .about__content .about__image .about__image-img {
   display: flex;
@@ -345,7 +350,11 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* .service__item:hover {
+  /*  .service__item:hover {
+      @include box-shadow;
+  } */
+  /* .service__item:hover::after {
+
       border-bottom: 5px solid $color-secundario;
   } */
 }
@@ -355,11 +364,13 @@ main {
   padding: 40px 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
+  transition: all 0.5s;
 }
 .services__content .service__item i {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 20px;
+  transition: all 0.5s;
 }
 .services__content .service__item .service__item-titulo {
   font-size: 24px;
@@ -370,7 +381,7 @@ main {
   font-size: 16px;
 }
 .services__content .service__item:hover > i {
-  color: #f39422;
+  color: #f5f9fa;
 }
 
 .portfolio__content {
@@ -384,6 +395,7 @@ main {
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 20px;
+  transition: all 0.5s;
 }
 .portfolio__content .portfolio__item .portfolio__image {
   width: 100%;
@@ -400,17 +412,17 @@ main {
   width: 100%;
   height: 100%;
   top: 100%;
-  background-color: rgba(54, 190, 217, 0.5);
+  /*   background-color: rgba(54, 190, 217, 0.75); */
   padding: 40px 40px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  transition: all 0.5s;
+  /* transition: all 0.5s; */
 }
 .portfolio__content .portfolio__item .portfolio__description .portfolio__description-titulo {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 20px;
   color: #f39422;
   font-weight: bold;
@@ -418,6 +430,7 @@ main {
 .portfolio__content .portfolio__item .portfolio__description .portfolio__description-text {
   margin-bottom: 20px;
   text-align: center;
+  color: #f5f9fa;
 }
 .portfolio__content .portfolio__item .portfolio__description .portfolio__link {
   width: 100%;
@@ -443,6 +456,15 @@ main {
 }
 .portfolio__content .portfolio__item:hover > .portfolio__description {
   top: 0;
+}
+.portfolio__content .portfolio__item:hover::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(54, 190, 217, 0.75);
 }
 
 .portfolio .btn__link {
@@ -485,13 +507,18 @@ main {
 }
 .form .form__submit {
   margin: auto;
-  width: 100px;
+  width: 150px;
   padding: 10px;
   font-size: 24px;
   border-radius: 5px;
   background-color: #f39422;
   border: none;
   color: #f5f9fa;
+  transition: all 0.5s;
+}
+.form .form__submit:hover {
+  background-color: #f5f9fa;
+  color: #323333;
 }
 
 .contact {
@@ -517,16 +544,28 @@ main {
   border-radius: 20px;
   -webkit-box-shadow: 0 0 10px 1px #4b4c4d;
   box-shadow: 0 0 10px 1px #4b4c4d;
+  transition: all 0.5s;
   margin-bottom: 20px;
 }
 .social__content .social__item i {
   font-size: 60px;
   color: #f5f9fa;
   margin-bottom: 20px;
+  transition: all 0.5s;
 }
 .social__content .social__item .social__item-desc {
   font-size: 24px;
   color: #f5f9fa;
+  transition: all 0.5s;
+}
+.social__content .social__item:hover {
+  background-color: #f5f9fa;
+}
+.social__content .social__item:hover > i {
+  color: #323333;
+}
+.social__content .social__item:hover > .social__item-desc {
+  color: #323333;
 }
 
 .footer {

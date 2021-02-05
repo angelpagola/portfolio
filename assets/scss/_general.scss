@@ -39,7 +39,7 @@ section {
         .section__title::after {
             content: "";
             display: block;
-            width: 150px;
+            width: 200px;
             height: 5px;
             background: $color-primario;
             margin: 0 auto 40px;
@@ -47,7 +47,7 @@ section {
         .section__title-black::after {
             content: "";
             display: block;
-            width: 150px;
+            width: 200px;
             height: 5px;
             background: $color-white;
             margin: 0 auto 40px;
@@ -72,26 +72,6 @@ section {
     padding: 40px 0;
 }
 
-.column__50 {
-    width: 49%;
-}
-
-.column__33 {
-    width: 32%;
-}
-
-.column__25 {
-    width: 23%;
-}
-
-.columna__title {
-    width: 100%;
-    font-size: 26px;
-    /* text-align: center; */
-    margin-bottom: 20px;
-    /*     color: $color-secundario; */
-}
-
 .btn__link {
     display: block;
     background-color: $color-primario;
@@ -105,6 +85,11 @@ section {
     i {
         margin-right: 5px;
     }
+    transition: all .5s;
+}
+
+.btn__link:hover {
+    background-color: $color-secundario;
 }
 
 

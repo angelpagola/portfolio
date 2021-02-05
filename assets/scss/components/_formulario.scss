@@ -32,12 +32,17 @@
     }
     .form__submit {
         margin: auto;
-        width: 100px;
+        width: 150px;
         padding: 10px;
         font-size: 24px;
         border-radius: 5px;
         background-color: $color-secundario;
         border: none;
         color: $color-white;
+        transition: all .5s;
+    }
+    .form__submit:hover {
+        background-color: $color-white;
+        color: $color-black;
     }
 }
