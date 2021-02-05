@@ -17,3 +17,21 @@
     margin-bottom: 20px;
     /*     color: $color-secundario; */
 }
+
+@media screen and (max-width: 1000px) {
+    .column__33 {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .column__50 {
+        width: 100%;
+    }
+    .column__33 {
+        width: 100%;
+    }
+    .column__25 {
+        width: 48%;
+    }
+}

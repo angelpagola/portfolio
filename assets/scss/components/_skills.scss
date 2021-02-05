@@ -12,9 +12,38 @@
         padding: 40px 0;
         box-sizing: border-box;
         margin-bottom: 20px;
+        img {
+            height: 126px;
+            width: 126px;
+        }
         .skill__item-desc {
             font-size: 20px;
             margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .skills__content {
+        .skill__item {
+            img {
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .skills__content {
+        .skill__item {
+            img {
+                height: 80px;
+                width: 80px;
+            }
+            .skill__item-desc {
+                font-size: 16px;
+            }
         }
     }
 }

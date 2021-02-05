@@ -34,7 +34,7 @@
         margin: auto;
         width: 150px;
         padding: 10px;
-        font-size: 24px;
+        font-size: 20px;
         border-radius: 5px;
         background-color: $color-secundario;
         border: none;
@@ -44,5 +44,32 @@
     .form__submit:hover {
         background-color: $color-white;
         color: $color-black;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .form {
+        .form__label,
+        .form__input,
+        .form__textarea {
+            font-size: 20px;
+        }
+        .form__submit {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .form {
+        .form__label,
+        .form__input,
+        .form__textarea {
+            font-size: 16px;
+        }
+        .form__submit {
+            font-size: 18px;
+        }
     }
 }

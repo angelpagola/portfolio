@@ -103,6 +103,15 @@ section .container .section__texto {
 /* .main {
     overflow: hidden;
 } */
+@media screen and (max-width: 760px) {
+  .btn__link {
+    font-size: 18px;
+    transition: all 0.5s;
+  }
+  .btn__link i {
+    margin-right: 5px;
+  }
+}
 .column__50 {
   width: 49%;
 }
@@ -123,6 +132,24 @@ section .container .section__texto {
   /*     color: $color-secundario; */
 }
 
+@media screen and (max-width: 1000px) {
+  .column__33 {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .column__50 {
+    width: 100%;
+  }
+
+  .column__33 {
+    width: 100%;
+  }
+
+  .column__25 {
+    width: 48%;
+  }
+}
 /*Estilos del menu y navegador*/
 .main-header {
   display: flex;
@@ -196,7 +223,7 @@ section .container .section__texto {
   color: #323333;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1000px) {
   .icon-menu {
     display: block;
   }
@@ -305,6 +332,64 @@ main {
   font-weight: bolder;
 }
 
+@media screen and (max-width: 1200px) {
+  .home .home__content .home__image {
+    height: 250px;
+    width: 250px;
+  }
+  .home .home__content .home__description .texto__1,
+.home .home__content .home__description .texto__3 {
+    font-size: 36px;
+    color: #f5f9fa;
+  }
+  .home .home__content .home__description .texto__2 {
+    font-size: 52px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .home .home__content .home__image {
+    height: 220px;
+    width: 220px;
+  }
+  .home .home__content .home__description .texto__1,
+.home .home__content .home__description .texto__3 {
+    font-size: 32px;
+    color: #f5f9fa;
+  }
+  .home .home__content .home__description .texto__2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .home .home__content {
+    flex-direction: column;
+  }
+  .home .home__content .home__image {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  .home .home__content .home__description .texto__1,
+.home .home__content .home__description .texto__3 {
+    font-size: 32px;
+  }
+  .home .home__content .home__description .texto__2 {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home .home__content .home__image {
+    height: 220px;
+    width: 220px;
+  }
+  .home .home__content .home__description .texto__1,
+.home .home__content .home__description .texto__3 {
+    font-size: 24px;
+  }
+  .home .home__content .home__description .texto__2 {
+    font-size: 36px;
+  }
+}
 .about .about__content {
   display: flex;
   flex-wrap: wrap;
@@ -320,12 +405,41 @@ main {
 }
 .about .about__content .about__image .about__image-img {
   display: flex;
+  /* object-fit: cover;
+  object-position: top; */
   margin: auto;
-  width: 50%;
+  width: 300px;
   height: 100%;
   border-radius: 10px;
 }
 
+@media screen and (max-width: 1200px) {
+  .about .about__content .about__image {
+    height: 300px;
+  }
+  .about .about__content .about__image .about__image-img {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about .about__content .about__description .columna__texto {
+    font-size: 16px;
+  }
+  .about .about__content .about__image {
+    height: 350px;
+  }
+  .about .about__content .about__image .about__image-img {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .about .about__content .about__description {
+    margin-bottom: 20px;
+  }
+  .about .about__content .about__description .btn__link {
+    margin: auto;
+  }
+}
 .skills__content {
   display: flex;
   flex-wrap: wrap;
@@ -341,11 +455,30 @@ main {
   box-sizing: border-box;
   margin-bottom: 20px;
 }
+.skills__content .skill__item img {
+  height: 126px;
+  width: 126px;
+}
 .skills__content .skill__item .skill__item-desc {
   font-size: 20px;
   margin-top: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+  .skills__content .skill__item img {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .skills__content .skill__item img {
+    height: 80px;
+    width: 80px;
+  }
+  .skills__content .skill__item .skill__item-desc {
+    font-size: 16px;
+  }
+}
 .services__content {
   display: flex;
   flex-wrap: wrap;
@@ -419,7 +552,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* transition: all 0.5s; */
+  transition: all 0.5s;
 }
 .portfolio__content .portfolio__item .portfolio__description .portfolio__description-titulo {
   font-size: 28px;
@@ -472,6 +605,28 @@ main {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 1000px) {
+  .portfolio__content .portfolio__item .portfolio__description .portfolio__link .portfolio__link-btn {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .portfolio__content .portfolio__item {
+    height: 350px;
+  }
+  .portfolio__content .portfolio__item .portfolio__description .portfolio__description-titulo {
+    font-size: 40px;
+  }
+  .portfolio__content .portfolio__item .portfolio__description .portfolio__description-text {
+    font-size: 16px;
+  }
+  .portfolio__content .portfolio__item .portfolio__description .portfolio__link {
+    justify-content: space-around;
+  }
+  .portfolio__content .portfolio__item .portfolio__description .portfolio__link .portfolio__link-btn {
+    font-size: 16px;
+  }
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -509,7 +664,7 @@ main {
   margin: auto;
   width: 150px;
   padding: 10px;
-  font-size: 24px;
+  font-size: 20px;
   border-radius: 5px;
   background-color: #f39422;
   border: none;
@@ -519,8 +674,29 @@ main {
 .form .form__submit:hover {
   background-color: #f5f9fa;
   color: #323333;
+  font-size: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+  .form .form__label,
+.form .form__input,
+.form .form__textarea {
+    font-size: 20px;
+  }
+  .form .form__submit {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .form .form__label,
+.form .form__input,
+.form .form__textarea {
+    font-size: 16px;
+  }
+  .form .form__submit {
+    font-size: 18px;
+  }
+}
 .contact {
   background-color: #36bed9;
 }
@@ -580,6 +756,16 @@ main {
   opacity: 0.8;
 }
 
+@media screen and (max-width: 1000px) {
+  .footer {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .footer {
+    font-size: 12px;
+  }
+}
 /* @import "components/banner"; */
 /* @import "components/footer"; */
 

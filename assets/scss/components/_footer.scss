@@ -9,3 +9,15 @@
         opacity: 0.8;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .footer {
+        font-size: 12px;
+    }
+}

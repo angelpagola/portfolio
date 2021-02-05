@@ -32,7 +32,7 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            /* transition: all 0.5s; */
+            transition: all 0.5s;
             .portfolio__description-titulo {
                 font-size: 28px;
                 margin-bottom: 20px;
@@ -85,5 +85,41 @@
     .btn__link {
         margin: auto;
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .portfolio__content {
+        .portfolio__item {
+            .portfolio__description {
+                .portfolio__link {
+                    .portfolio__link-btn {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .portfolio__content {
+        .portfolio__item {
+            height: 350px;
+            .portfolio__description {
+                .portfolio__description-titulo {
+                    font-size: 40px;
+                }
+                .portfolio__description-text {
+                    font-size: 16px;
+                }
+                .portfolio__link {
+                    justify-content: space-around;
+                    .portfolio__link-btn {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
     }
 }

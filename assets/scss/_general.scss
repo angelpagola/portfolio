@@ -96,3 +96,13 @@ section {
 /* .main {
     overflow: hidden;
 } */
+
+@media screen and (max-width: 760px) {
+    .btn__link {
+        font-size: 18px;
+        i {
+            margin-right: 5px;
+        }
+        transition: all .5s;
+    }
+}
