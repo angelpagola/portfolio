@@ -1,86 +1,11 @@
-.main-footer {
-    position: relative;
-    top: $footer;
-    width: 100%;
-    padding: 5px;
-    background-image: $footer-color;
-    z-index: 100;
-    box-sizing: border-box;
-    .footer__titulo-contenedor {
-        display: flex;
-        justify-content: flex-end;
-        border-bottom: 1px solid $stylish-color;
-        padding: 5px;
-        box-sizing: border-box;
-        .main-footer__titulo {
-            color: $primary-color;
-            font-size: $fuente-titulo;
-            font-weight: $densidad-bold;
-        }
-    }
-    .datos-contenedor {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5px;
-        box-sizing: border-box;
-        .sociales {
-            display: flex;
-            width: 20%;
-            justify-content: space-around;
-            .sociales__link {
-                height: 30px;
-                width: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: $color-white;
-                font-size: $fuente-texto;
-                border-radius: 50%;
-                opacity: .65;
-                transition: all 0.2s;
-            }
-            .sociales__link.facebook {
-                background-color: #3b5998;
-            }
-            .sociales__link.twitter {
-                background-color: #00acee;
-            }
-            .sociales__link.youtube {
-                background-color: #c4302b;
-            }
-            .sociales__link.linkedin {
-                background-color: #0e76a8;
-            }
-            .sociales__link:hover {
-                opacity: 1;
-            }
-        }
-        .datos {
-            display: flex;
-            flex-direction: column;
-            font-size: $fuente-texto;
-            a {
-                color: $color-black;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .main-footer {
-        .footer__titulo-contenedor {
-            .main-footer__titulo {
-                font-size: $fuente-subtitulo;
-            }
-        }
-        .datos-contenedor {
-            .sociales {
-                width: 40%;
-            }
-            .datos {
-                font-size: $fuente-alternativo;
-            }
-        }
+.footer {
+    background-color: $color-black;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    color: $color-white;
+    .footer__link {
+        color: $color-white;
+        opacity: 0.8;
     }
 }

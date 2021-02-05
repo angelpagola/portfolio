@@ -1,0 +1,78 @@
+@import "../mixin";
+.portfolio__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .portfolio__item {
+        position: relative;
+        height: 300px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        .portfolio__image {
+            width: 100%;
+            height: 100%;
+            .portfolio__image-img {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+            }
+        }
+        .portfolio__description {
+            position: absolute;
+            /* border-radius: 20px; */
+            width: 100%;
+            height: 100%;
+            top: 100%;
+            background-color: rgba(54, 190, 217, 0.5);
+            padding: 40px 40px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: all 0.5s;
+            .portfolio__description-titulo {
+                font-size: 24px;
+                margin-bottom: 20px;
+                color: $color-secundario;
+                font-weight: $densidad-bold;
+            }
+            .portfolio__description-text {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .portfolio__link {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .portfolio__link-btn {
+                    display: block;
+                    background-color: $color-primario;
+                    color: $color-white;
+                    padding: 10px;
+                    border-radius: 5px;
+                    font-weight: $densidad-bold;
+                    @include box-shadow;
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+                .portfolio__link-btn:hover {
+                    background-color: rgba(54, 190, 217, 0.1);
+                    color: $color-black;
+                }
+            }
+        }
+    }
+    .portfolio__item:hover>.portfolio__description {
+        top: 0;
+    }
+}
+
+.portfolio {
+    .btn__link {
+        margin: auto;
+        margin-top: 20px;
+    }
+}

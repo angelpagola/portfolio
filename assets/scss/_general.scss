@@ -44,6 +44,14 @@ section {
             background: $color-primario;
             margin: 0 auto 40px;
         }
+        .section__title-black::after {
+            content: "";
+            display: block;
+            width: 150px;
+            height: 5px;
+            background: $color-white;
+            margin: 0 auto 40px;
+        }
         .section__texto {
             width: 100%;
             font-size: 24px;
@@ -58,7 +66,9 @@ section {
 .about,
 .skills,
 .services,
-.contact {
+.portfolio,
+.contact,
+.social {
     padding: 40px 0;
 }
 
@@ -80,6 +90,21 @@ section {
     /* text-align: center; */
     margin-bottom: 20px;
     /*     color: $color-secundario; */
+}
+
+.btn__link {
+    display: block;
+    background-color: $color-primario;
+    color: $color-white;
+    font-size: 20px;
+    font-weight: $densidad-500;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    i {
+        margin-right: 5px;
+    }
 }
 
 

@@ -1,0 +1,28 @@
+@import "../mixin";
+.social {
+    background-color: $color-primario;
+}
+
+.social__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .social__item {
+        @include aliniacion-flex-center;
+        flex-direction: column;
+        height: 200px;
+        background-color: $color-primario;
+        border-radius: 20px;
+        @include box-shadow;
+        margin-bottom: 20px;
+        i {
+            font-size: 60px;
+            color: $color-white;
+            margin-bottom: 20px;
+        }
+        .social__item-desc {
+            font-size: 24px;
+            color: $color-white;
+        }
+    }
+}

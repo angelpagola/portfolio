@@ -5,7 +5,9 @@
     .service__item {
         background-color: $color-primario;
         text-align: center;
-        padding: 40px 0;
+        padding: 40px 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
         i {
             font-size: 30px;
             font-weight: $densidad-bold;
