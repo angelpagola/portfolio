@@ -739,6 +739,7 @@ main {
 }
 .social__content .social__item:hover > i {
   color: #323333;
+  /* text-shadow: 3px 2px 1px $color-black; */
 }
 .social__content .social__item:hover > .social__item-desc {
   color: #323333;

@@ -33,6 +33,7 @@
     }
     .social__item:hover>i {
         color: $color-black;
+        /* text-shadow: 3px 2px 1px $color-black; */
     }
     .social__item:hover>.social__item-desc {
         color: $color-black;
