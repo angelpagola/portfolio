@@ -2,19 +2,30 @@
     display: flex;
     flex-direction: column;
     .form__label {
-        font-size: 24px;
+        font-size: 16px;
         color: $color-white;
         padding-top: 20px;
+        display: block;
+        cursor: pointer;
+    }
+    .form__group {
+        position: relative;
     }
     .form__input {
         width: 100%;
         padding: 10px;
-        font-size: 24px;
+        font-size: 16px;
         margin-bottom: 10px;
         border: none;
         border-bottom: 1px solid rgba(245, 249, 250, 0.5);
         background-color: $color-primario;
         outline: none;
+        border-radius: 5px;
+        transition: .3 ease all;
+    }
+    .form__input:focus {
+        background-color: $color-white;
+        box-shadow: 3px 0px 30px rga(163, 163, 163, 0.4);
     }
     .form__textarea {
         width: 100%;
@@ -23,12 +34,69 @@
         min-width: 100%;
         max-height: 100px;
         min-height: 100px;
-        margin-bottom: 40px;
-        font-size: 24px;
+        margin-bottom: 20px;
+        font-size: 16px;
         border: none;
         border-bottom: 1px solid rgba(245, 249, 250, 0.5);
         background-color: $color-primario;
         outline: none;
+        transition: .3 ease all;
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    .form__textarea:focus {
+        background-color: $color-white;
+        box-shadow: 3px 0px 30px rga(163, 163, 163, 0.4);
+    }
+    .form__input-error {
+        font-size: 16px;
+        font-weight: $densidad-600;
+        display: none;
+    }
+    .form__input-error-activo {
+        display: block;
+    }
+    .form__input-estado {
+        position: absolute;
+        right: 10px;
+        top: 55px;
+        z-index: 100;
+        font-size: 16px;
+        color: $danger-color;
+        opacity: 0;
+    }
+    .form__group-termino {
+        margin-bottom: 20px;
+        .form__label {
+            display: flex;
+            align-items: center;
+            .form__checkbox {
+                margin-right: 10px;
+            }
+            .termino__texto {
+                font-size: 16px;
+            }
+        }
+    }
+    .form__message-error {
+        background-color: $danger-color;
+        padding: 10px;
+        border-radius: 5px;
+        color: $color-white;
+        margin-bottom: 20px;
+        display: none;
+        text-align: center;
+        i {
+            margin-right: 5px;
+        }
+    }
+    .form__message-error-activo {
+        display: block;
+    }
+    .form__group-btn {
+        display: flex;
+        flex-direction: column;
     }
     .form__submit {
         margin: auto;
@@ -40,11 +108,66 @@
         border: none;
         color: $color-white;
         transition: all .5s;
+        margin-bottom: 20px;
+        outline: none;
+        i {
+            margin-right: 5px;
+            font-size: 16px;
+        }
     }
     .form__submit:hover {
         background-color: $color-white;
         color: $color-black;
-        font-size: 20px;
+    }
+    .form__message-exito {
+        background-color: $success-color;
+        display: none;
+        padding: 10px;
+        border-radius: 5px;
+        color: $color-white;
+        margin-bottom: 20px;
+        text-align: center;
+        i {
+            margin-right: 5px;
+        }
+    }
+    .form__message-exito-activo {
+        display: block;
+    }
+}
+
+
+/*Estilos para validación*/
+
+.form__group-correcto {
+    .form__group-input {
+        .form__input {
+            background: $color-white;
+            color: $success-color;
+        }
+        .form__input-estado {
+            color: $success-color;
+            opacity: 1;
+        }
+        .form__textarea {
+            background: $color-white;
+            color: $success-color;
+        }
+    }
+}
+
+.form__group-incorrecto {
+    .form__group-input {
+        .form__input {
+            color: $danger-color;
+        }
+        .form__input-estado {
+            color: $danger-color;
+            opacity: 1;
+        }
+        .form__textarea {
+            color: $danger-color;
+        }
     }
 }
 
