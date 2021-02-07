@@ -632,19 +632,30 @@ main {
   flex-direction: column;
 }
 .form .form__label {
-  font-size: 24px;
+  font-size: 16px;
   color: #f5f9fa;
   padding-top: 20px;
+  display: block;
+  cursor: pointer;
+}
+.form .form__group {
+  position: relative;
 }
 .form .form__input {
   width: 100%;
   padding: 10px;
-  font-size: 24px;
+  font-size: 16px;
   margin-bottom: 10px;
   border: none;
   border-bottom: 1px solid rgba(245, 249, 250, 0.5);
   background-color: #36bed9;
   outline: none;
+  border-radius: 5px;
+  transition: 0.3 ease all;
+}
+.form .form__input:focus {
+  background-color: #f5f9fa;
+  box-shadow: 3px 0px 30px rga(163, 163, 163, 0.4);
 }
 .form .form__textarea {
   width: 100%;
@@ -653,12 +664,69 @@ main {
   min-width: 100%;
   max-height: 100px;
   min-height: 100px;
-  margin-bottom: 40px;
-  font-size: 24px;
+  margin-bottom: 20px;
+  font-size: 16px;
   border: none;
   border-bottom: 1px solid rgba(245, 249, 250, 0.5);
   background-color: #36bed9;
   outline: none;
+  transition: 0.3 ease all;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.form .form__textarea:focus {
+  background-color: #f5f9fa;
+  box-shadow: 3px 0px 30px rga(163, 163, 163, 0.4);
+}
+.form .form__input-error {
+  font-size: 16px;
+  font-weight: 600;
+  display: none;
+}
+.form .form__input-error-activo {
+  display: block;
+}
+.form .form__input-estado {
+  position: absolute;
+  right: 10px;
+  top: 55px;
+  z-index: 100;
+  font-size: 16px;
+  color: #ff4444;
+  opacity: 0;
+}
+.form .form__group-termino {
+  margin-bottom: 20px;
+}
+.form .form__group-termino .form__label {
+  display: flex;
+  align-items: center;
+}
+.form .form__group-termino .form__label .form__checkbox {
+  margin-right: 10px;
+}
+.form .form__group-termino .form__label .termino__texto {
+  font-size: 16px;
+}
+.form .form__message-error {
+  background-color: #ff4444;
+  padding: 10px;
+  border-radius: 5px;
+  color: #f5f9fa;
+  margin-bottom: 20px;
+  display: none;
+  text-align: center;
+}
+.form .form__message-error i {
+  margin-right: 5px;
+}
+.form .form__message-error-activo {
+  display: block;
+}
+.form .form__group-btn {
+  display: flex;
+  flex-direction: column;
 }
 .form .form__submit {
   margin: auto;
@@ -670,11 +738,56 @@ main {
   border: none;
   color: #f5f9fa;
   transition: all 0.5s;
+  margin-bottom: 20px;
+  outline: none;
+}
+.form .form__submit i {
+  margin-right: 5px;
+  font-size: 16px;
 }
 .form .form__submit:hover {
   background-color: #f5f9fa;
   color: #323333;
-  font-size: 20px;
+}
+.form .form__message-exito {
+  background-color: #00c851;
+  display: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #f5f9fa;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.form .form__message-exito i {
+  margin-right: 5px;
+}
+.form .form__message-exito-activo {
+  display: block;
+}
+
+/*Estilos para validación*/
+.form__group-correcto .form__group-input .form__input {
+  background: #f5f9fa;
+  color: #00c851;
+}
+.form__group-correcto .form__group-input .form__input-estado {
+  color: #00c851;
+  opacity: 1;
+}
+.form__group-correcto .form__group-input .form__textarea {
+  background: #f5f9fa;
+  color: #00c851;
+}
+
+.form__group-incorrecto .form__group-input .form__input {
+  color: #ff4444;
+}
+.form__group-incorrecto .form__group-input .form__input-estado {
+  color: #ff4444;
+  opacity: 1;
+}
+.form__group-incorrecto .form__group-input .form__textarea {
+  color: #ff4444;
 }
 
 @media screen and (max-width: 1200px) {
@@ -716,12 +829,11 @@ main {
   justify-content: center;
   flex-direction: column;
   height: 200px;
-  background-color: #36bed9;
-  border-radius: 20px;
-  -webkit-box-shadow: 0 0 10px 1px #4b4c4d;
-  box-shadow: 0 0 10px 1px #4b4c4d;
   transition: all 0.5s;
   margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: -2px -2px 2px rgba(255, 255, 255, 0.3), 5px 5px 5px rgba(0, 0, 0, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.2);
+  /*  @include box-shadow; */
 }
 .social__content .social__item i {
   font-size: 60px;
@@ -739,7 +851,7 @@ main {
 }
 .social__content .social__item:hover > i {
   color: #323333;
-  /* text-shadow: 3px 2px 1px $color-black; */
+  /* filter: drop-shadow(-2px -2px 2px rgba(255, 255, 255, 0.3)), drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2)), drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.2)); */
 }
 .social__content .social__item:hover > .social__item-desc {
   color: #323333;
