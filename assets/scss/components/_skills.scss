@@ -15,6 +15,14 @@
         img {
             height: 126px;
             width: 126px;
+            @include box-shadow-3D;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        img:hover {
+            background-color: $color-white;
         }
         .skill__item-desc {
             font-size: 20px;

@@ -458,6 +458,14 @@ main {
 .skills__content .skill__item img {
   height: 126px;
   width: 126px;
+  box-shadow: -2px -2px 2px rgba(255, 255, 255, 0.3), 5px 5px 5px rgba(0, 0, 0, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.skills__content .skill__item img:hover {
+  background-color: #f5f9fa;
 }
 .skills__content .skill__item .skill__item-desc {
   font-size: 20px;
@@ -501,6 +509,8 @@ main {
 }
 .services__content .service__item i {
   font-size: 40px;
+  color: #323333;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.3), 5px 5px 5px rgba(50, 0, 50, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.2);
   font-weight: bold;
   margin-bottom: 20px;
   transition: all 0.5s;
@@ -833,13 +843,13 @@ main {
   margin-bottom: 20px;
   border-radius: 20px;
   box-shadow: -2px -2px 2px rgba(255, 255, 255, 0.3), 5px 5px 5px rgba(0, 0, 0, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.2);
-  /*  @include box-shadow; */
 }
 .social__content .social__item i {
   font-size: 60px;
   color: #f5f9fa;
   margin-bottom: 20px;
   transition: all 0.5s;
+  /*  @include text-shadow-3D; */
 }
 .social__content .social__item .social__item-desc {
   font-size: 24px;

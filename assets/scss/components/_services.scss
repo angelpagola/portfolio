@@ -12,6 +12,8 @@
         transition: all .5s;
         i {
             font-size: 40px;
+            color: $color-black;
+            @include text-shadow-3D;
             font-weight: $densidad-bold;
             margin-bottom: 20px;
             transition: all .5s;
