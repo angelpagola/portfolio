@@ -297,12 +297,11 @@ section .container .section__texto {
 
 .home__background {
   position: relative;
-  /* background-attachment: fixed; */
-  width: 100vw;
-  height: 100vh;
   background-image: url("../images/slider-2.jpg");
   background-size: cover;
   background-position: center;
+  /* background-attachment: fixed; */
+  height: 100vh;
 }
 
 .home__background::before {
@@ -391,22 +390,9 @@ section .container .section__texto {
     flex-direction: column;
   }
   .home .home__content .home__image {
-    height: 250px;
-    width: 250px;
+    height: 220px;
+    width: 220px;
     margin-bottom: 20px;
-  }
-  .home .home__content .home__description .texto__1,
-.home .home__content .home__description .texto__3 {
-    font-size: 32px;
-  }
-  .home .home__content .home__description .texto__2 {
-    font-size: 44px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .home .home__content .home__image {
-    height: 200px;
-    width: 200px;
   }
   .home .home__content .home__description .texto__1,
 .home .home__content .home__description .texto__3 {
@@ -414,6 +400,19 @@ section .container .section__texto {
   }
   .home .home__content .home__description .texto__2 {
     font-size: 36px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home .home__content .home__image {
+    height: 150px;
+    width: 150px;
+  }
+  .home .home__content .home__description .texto__1,
+.home .home__content .home__description .texto__3 {
+    font-size: 16px;
+  }
+  .home .home__content .home__description .texto__2 {
+    font-size: 24px;
   }
 }
 .about .about__content {
@@ -668,7 +667,7 @@ section .container .section__texto {
     height: 350px;
   }
   .portfolio__content .portfolio__item .portfolio__description .portfolio__description-titulo {
-    font-size: 36px;
+    font-size: 32px;
   }
   .portfolio__content .portfolio__item .portfolio__description .portfolio__description-text {
     font-size: 16px;
@@ -685,7 +684,7 @@ section .container .section__texto {
     height: 300px;
   }
   .portfolio__content .portfolio__item .portfolio__description .portfolio__description-titulo {
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
   }
   .portfolio__content .portfolio__item .portfolio__description .portfolio__description-text {

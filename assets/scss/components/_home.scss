@@ -1,12 +1,11 @@
 @import "../mixin";
 .home__background {
     position: relative;
-    /* background-attachment: fixed; */
-    width: 100vw;
-    height: 100vh;
     background-image: url("../images/slider-2.jpg");
     background-size: cover;
     background-position: center;
+    /* background-attachment: fixed; */
+    height: 100vh;
 }
 
 .home__background::before {
@@ -109,17 +108,17 @@
         .home__content {
             flex-direction: column;
             .home__image {
-                height: 250px;
-                width: 250px;
+                height: 220px;
+                width: 220px;
                 margin-bottom: 20px;
             }
             .home__description {
                 .texto__1,
                 .texto__3 {
-                    font-size: 32px;
+                    font-size: 24px;
                 }
                 .texto__2 {
-                    font-size: 44px;
+                    font-size: 36px;
                 }
             }
         }
@@ -130,16 +129,16 @@
     .home {
         .home__content {
             .home__image {
-                height: 200px;
-                width: 200px;
+                height: 150px;
+                width: 150px;
             }
             .home__description {
                 .texto__1,
                 .texto__3 {
-                    font-size: 24px;
+                    font-size: 16px;
                 }
                 .texto__2 {
-                    font-size: 36px;
+                    font-size: 24px;
                 }
             }
         }
