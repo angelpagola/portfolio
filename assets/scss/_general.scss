@@ -7,6 +7,10 @@
     font-family: $fuente-nunito;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -30,7 +34,7 @@ section {
         flex-direction: column;
         .section__title {
             width: 100%;
-            font-size: 40px;
+            font-size: 36px;
             text-align: center;
             color: $color-secundario;
             font-weight: $densidad-bolder;
