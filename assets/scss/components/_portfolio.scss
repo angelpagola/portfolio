@@ -108,7 +108,7 @@
             height: 350px;
             .portfolio__description {
                 .portfolio__description-titulo {
-                    font-size: 40px;
+                    font-size: 36px;
                 }
                 .portfolio__description-text {
                     font-size: 16px;
@@ -117,6 +117,29 @@
                     justify-content: space-around;
                     .portfolio__link-btn {
                         font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .portfolio__content {
+        .portfolio__item {
+            height: 300px;
+            .portfolio__description {
+                .portfolio__description-titulo {
+                    font-size: 32px;
+                    text-align: center;
+                }
+                .portfolio__description-text {
+                    font-size: 16px;
+                }
+                .portfolio__link {
+                    justify-content: space-around;
+                    .portfolio__link-btn {
+                        font-size: 10px;
                     }
                 }
             }

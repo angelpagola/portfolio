@@ -39,3 +39,15 @@
         color: $color-black;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .social__content {
+        .social__item {
+            .social__item-desc {
+                font-size: 16px;
+                color: $color-white;
+                transition: all .5s;
+            }
+        }
+    }
+}

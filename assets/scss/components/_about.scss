@@ -68,3 +68,16 @@
         }
     }
 }
+
+@media screen and (max-width: 400px) {
+    .about {
+        .about__content {
+            .about__image {
+                height: 270px;
+                .about__image-img {
+                    width: 250px;
+                }
+            }
+        }
+    }
+}

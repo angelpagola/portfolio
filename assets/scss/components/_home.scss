@@ -1,11 +1,12 @@
 @import "../mixin";
 .home__background {
     position: relative;
+    /* background-attachment: fixed; */
+    width: 100vw;
+    height: 100vh;
     background-image: url("../images/slider-2.jpg");
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
-    height: 100vh;
 }
 
 .home__background::before {
@@ -55,6 +56,7 @@
                 font-size: 60px;
                 color: $color-secundario;
                 font-weight: $densidad-bolder;
+                text-align: center;
             }
         }
     }
@@ -128,8 +130,8 @@
     .home {
         .home__content {
             .home__image {
-                height: 220px;
-                width: 220px;
+                height: 200px;
+                width: 200px;
             }
             .home__description {
                 .texto__1,
