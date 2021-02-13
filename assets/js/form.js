@@ -65,12 +65,27 @@ textareas.forEach((textarea) => {
 form.addEventListener('submit', (e) => {
     e.preventDefault(); //
     const terminos = document.getElementById('terminos');
+
     if (campos.nombre && campos.correo && campos.telefono && campos.telefono && terminos.checked) {
+
+        var datos = new FormData(form);
+        console.log(datos.get('nombre'));
+        console.log(datos.get('mensaje'));
+
+        fetch('assets/php/send.php', {
+                method: 'POST',
+                body: datos
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data === '1') {
+                    document.getElementById('form__message-exito').classList.add('form__message-exito-activo');
+                    setTimeout(() => {
+                        document.getElementById('form__message-exito').classList.remove('form__message-exito-activo');
+                    }, 5000);
+                }
+            })
         form.reset();
-        document.getElementById('form__message-exito').classList.add('form__message-exito-activo');
-        setTimeout(() => {
-            document.getElementById('form__message-exito').classList.remove('form__message-exito-activo');
-        }, 5000);
         document.querySelectorAll('.form__group-correcto').forEach((icono) => {
             icono.classList.remove('form__group-correcto');
         });
