@@ -17,8 +17,16 @@ body {
   padding: 0;
   font-family: "Nunito Sans", sans-serif;
   scroll-margin-top: 60px;
+  transition: 0.3s all ease;
+}
+*.body__dark,
+body.body__dark {
+  background-color: #323333;
 }
 
+/* .body__dark {
+    background-color: $color-black;   
+} */
 html {
   scroll-behavior: smooth;
 }
@@ -76,6 +84,9 @@ section .container .section__texto {
   text-align: center;
   color: #323333;
 }
+body.body__dark section .container .section__texto {
+  color: #f5f9fa;
+}
 
 .about,
 .skills,
@@ -106,6 +117,30 @@ section .container .section__texto {
   background-color: #f39422;
 }
 
+/*swtich*/
+.switch {
+  background-color: #323333;
+  color: #f5f9fa;
+  outline: none;
+  border: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.switch__dark {
+  background-color: #f5f9fa;
+  color: #323333;
+}
+
 /* .main {
     overflow: hidden;
 } */
@@ -124,6 +159,12 @@ section .container .section__texto {
   }
   section .container .section__texto {
     font-size: 20px;
+  }
+
+  .switch {
+    height: 40px;
+    width: 40px;
+    font-size: 16px;
   }
 }
 .column__50 {
@@ -144,6 +185,9 @@ section .container .section__texto {
   /* text-align: center; */
   margin-bottom: 20px;
   /*     color: $color-secundario; */
+}
+body.body__dark .columna__title {
+  color: #f5f9fa;
 }
 
 @media screen and (max-width: 1000px) {
@@ -425,6 +469,9 @@ section .container .section__texto {
 .about .about__content .about__description .columna__texto {
   font-size: 18px;
   margin-bottom: 20px;
+}
+body.body__dark .about .about__content .about__description .columna__texto {
+  color: #f5f9fa;
 }
 .about .about__content .about__image {
   height: 280px;

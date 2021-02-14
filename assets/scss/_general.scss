@@ -7,7 +7,16 @@ body {
     padding: 0;
     font-family: $fuente-nunito;
     scroll-margin-top: $header;
+    transition: 0.3s all ease;
+    &.body__dark {
+        background-color: $color-black;
+    }
 }
+
+
+/* .body__dark {
+    background-color: $color-black;   
+} */
 
 html {
     scroll-behavior: smooth;
@@ -65,6 +74,9 @@ section {
             font-weight: $densidad-bolder;
             text-align: center;
             color: $color-black;
+            body.body__dark & {
+                color: $color-white;
+            }
         }
     }
 }
@@ -99,6 +111,32 @@ section {
 }
 
 
+/*swtich*/
+
+.switch {
+    background-color: $color-black;
+    color: $color-white;
+    outline: none;
+    border: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.switch__dark {
+    background-color: $color-white;
+    color: $color-black;
+}
+
+
 /* .main {
     overflow: hidden;
 } */
@@ -123,5 +161,10 @@ section {
                 font-size: 20px;
             }
         }
+    }
+    .switch {
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
     }
 }

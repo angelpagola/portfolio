@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body id="body">
+    <button class="switch" id="switch">
+        <span><i id="switch__icon" class="fas fa-moon"></i></span>
+    </button>
     <header class="main-header">
         <div class="container container__flex">
             <a href="/" class="logo">
@@ -399,6 +402,18 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/form.js"></script>
+
+    <script>
+        var btnswitch = document.getElementById('switch');
+        var switch__icon = document.getElementById('switch__icon');
+        var body = document.getElementById('body');
+        btnswitch.onclick = () => {
+            btnswitch.classList.toggle('switch__dark');
+            switch__icon.classList.toggle('fa-sun');
+            body.classList.toggle('body__dark');
+
+        }
+    </script>
 </body>
 
 </html>
