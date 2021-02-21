@@ -7,7 +7,7 @@ body {
     padding: 0;
     font-family: $fuente-nunito;
     scroll-margin-top: $header;
-    transition: 0.3s all ease;
+    transition: 0.5s background-color ease;
     &.body__dark {
         background-color: $color-black;
     }

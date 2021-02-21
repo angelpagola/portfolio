@@ -68,7 +68,7 @@ form.addEventListener('submit', (e) => {
 
     if (campos.nombre && campos.correo && campos.telefono && campos.telefono && terminos.checked) {
 
-        var datos = new FormData(form);
+        /* var datos = new FormData(form);
         console.log(datos.get('nombre'));
         console.log(datos.get('mensaje'));
 
@@ -88,7 +88,17 @@ form.addEventListener('submit', (e) => {
         form.reset();
         document.querySelectorAll('.form__group-correcto').forEach((icono) => {
             icono.classList.remove('form__group-correcto');
+        }); */
+        document.getElementById('form__message-exito').classList.add('form__message-exito-activo');
+        setTimeout(() => {
+            document.getElementById('form__message-exito').classList.remove('form__message-exito-activo');
+        }, 5000);
+
+        form.reset();
+        document.querySelectorAll('.form__group-correcto').forEach((icono) => {
+            icono.classList.remove('form__group-correcto');
         });
+
     } else {
         document.getElementById('form__message-error').classList.add('form__message-error-activo');
         setTimeout(() => {
