@@ -1,84 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 *,
 body {
-    margin: 0;
-    padding: 0;
-    font-family: $fuente-nunito;
-    scroll-margin-top: $header;
-    transition: 0.5s background-color ease;
-    &.body__dark {
-        background-color: $color-black;
-    }
+  margin: 0;
+  padding: 0;
+  font-family: $fuente-nunito;
+  scroll-margin-top: $header;
+  transition: 0.5s background-color ease;
+  &.body__dark {
+    background-color: $color-black;
+  }
 }
-
 
 /* .body__dark {
     background-color: $color-black;   
 } */
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    width: 90%;
+  width: 90%;
 }
 
 .container__flex {
-    display: flex;
+  display: flex;
 }
 
 section {
-    .container {
-        margin: auto;
-        flex-direction: column;
-        .section__title {
-            width: 100%;
-            font-size: 36px;
-            text-align: center;
-            color: $color-secundario;
-            font-weight: $densidad-bolder;
-            /* margin-bottom: 20px; */
-        }
-        .section__title::after {
-            content: "";
-            display: block;
-            width: 200px;
-            height: 5px;
-            background: $color-primario;
-            margin: 0 auto 40px;
-        }
-        .section__title-black::after {
-            content: "";
-            display: block;
-            width: 200px;
-            height: 5px;
-            background: $color-white;
-            margin: 0 auto 40px;
-        }
-        .section__texto {
-            width: 100%;
-            font-size: 24px;
-            margin-bottom: 20px;
-            font-weight: $densidad-bolder;
-            text-align: center;
-            color: $color-black;
-            body.body__dark & {
-                color: $color-white;
-            }
-        }
+  .container {
+    margin: auto;
+    flex-direction: column;
+    .section__title {
+      width: 100%;
+      font-size: 36px;
+      text-align: center;
+      color: $color-secundario;
+      font-weight: $densidad-bolder;
+      /* margin-bottom: 20px; */
     }
+    .section__title::after {
+      content: "";
+      display: block;
+      width: 200px;
+      height: 5px;
+      background: $color-primario;
+      margin: 0 auto 40px;
+    }
+    .section__title-black::after {
+      content: "";
+      display: block;
+      width: 200px;
+      height: 5px;
+      background: $color-white;
+      margin: 0 auto 40px;
+    }
+    .section__texto {
+      width: 100%;
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: $densidad-bolder;
+      text-align: center;
+      color: $color-black;
+      body.body__dark & {
+        color: $color-white;
+      }
+    }
+  }
 }
 
 .about,
@@ -87,85 +86,113 @@ section {
 .portfolio,
 .contact,
 .social {
-    padding: 40px 0;
+  padding: 40px 0;
 }
 
 .btn__link {
-    display: block;
-    text-decoration: none;
-    background-color: $color-primario;
-    color: $color-white;
-    font-size: 20px;
-    font-weight: $densidad-500;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    border-radius: 5px;
-    i {
-        margin-right: 5px;
-    }
-    transition: all .5s;
+  display: block;
+  text-decoration: none;
+  background-color: $color-primario;
+  color: $color-white;
+  font-size: 20px;
+  font-weight: $densidad-500;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  i {
+    margin-right: 5px;
+  }
+  transition: all 0.5s;
 }
 
 .btn__link:hover {
-    background-color: $color-secundario;
+  background-color: $color-secundario;
 }
-
 
 /*swtich*/
 
 .switch {
-    background-color: $color-black;
-    color: $color-white;
-    outline: none;
-    border: none;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
+  background-color: $color-black;
+  color: $color-white;
+  outline: none;
+  border: none;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
 }
 
 .switch__dark {
-    background-color: $color-white;
-    color: $color-black;
+  background-color: $color-white;
+  color: $color-black;
 }
 
+/*========== SCROLL  ==========*/
+
+/* Scroll top */
+.scrolltop {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+    background: rgba(54, 190, 217,0.5);
+    border-radius: 0.4rem;
+    z-index: 2000;
+    transition: 0.4s;
+    visibility: hidden;
+  }
+  .scrolltop:hover {
+    background-color: $color-primario;
+  }
+  .scrolltop__icon {
+    font-size: 1.2rem;
+    color: $color-white;
+  }
+  
+  .show-scroll {
+    visibility: visible;
+    bottom: 1.5rem;
+  }
 
 /* .main {
     overflow: hidden;
 } */
 
 @media screen and (max-width: 760px) {
-    .btn__link {
-        font-size: 18px;
-        i {
-            margin-right: 5px;
-        }
-        transition: all .5s;
+  .btn__link {
+    font-size: 18px;
+    i {
+      margin-right: 5px;
     }
+    transition: all 0.5s;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    section {
-        .container {
-            .section__title {
-                font-size: 30px;
-            }
-            .section__texto {
-                font-size: 20px;
-            }
-        }
+  section {
+    .container {
+      .section__title {
+        font-size: 30px;
+      }
+      .section__texto {
+        font-size: 20px;
+      }
     }
-    .switch {
-        height: 40px;
-        width: 40px;
-        font-size: 16px;
-    }
+  }
+  .switch {
+    height: 40px;
+    width: 40px;
+    font-size: 16px;
+  }
 }

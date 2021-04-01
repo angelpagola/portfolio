@@ -65,7 +65,7 @@ section .container .section__title::after {
   display: block;
   width: 200px;
   height: 5px;
-  background: #36bed9;
+  background: #0ED2F7;
   margin: 0 auto 40px;
 }
 section .container .section__title-black::after {
@@ -100,7 +100,7 @@ body.body__dark section .container .section__texto {
 .btn__link {
   display: block;
   text-decoration: none;
-  background-color: #36bed9;
+  background-color: #0ED2F7;
   color: #f5f9fa;
   font-size: 20px;
   font-weight: 500;
@@ -126,7 +126,7 @@ body.body__dark section .container .section__texto {
   border: none;
   position: fixed;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
   height: 50px;
   width: 50px;
   border-radius: 50px;
@@ -140,6 +140,37 @@ body.body__dark section .container .section__texto {
 .switch__dark {
   background-color: #f5f9fa;
   color: #323333;
+}
+
+/*========== SCROLL  ==========*/
+/* Scroll top */
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem;
+  background: rgba(54, 190, 217, 0.5);
+  border-radius: 0.4rem;
+  z-index: 2000;
+  transition: 0.4s;
+  visibility: hidden;
+}
+
+.scrolltop:hover {
+  background-color: #0ED2F7;
+}
+
+.scrolltop__icon {
+  font-size: 1.2rem;
+  color: #f5f9fa;
+}
+
+.show-scroll {
+  visibility: visible;
+  bottom: 1.5rem;
 }
 
 /* .main {
@@ -228,7 +259,7 @@ body.body__dark .columna__title {
   height: 60px;
   top: 0;
   z-index: 20000;
-  background: #36bed9;
+  background: #0ED2F7;
   -webkit-box-shadow: 0 0 10px 1px #4b4c4d;
   box-shadow: 0 0 10px 1px #4b4c4d;
 }
@@ -309,7 +340,7 @@ body.body__dark .columna__title {
     height: 100vh;
     padding: 5px 0;
     box-sizing: border-box;
-    background: #36bed9;
+    background: #0ED2F7;
     border-top: 1px solid rgba(245, 249, 250, 0.5);
     /* @include box-shadow; */
   }
@@ -325,7 +356,7 @@ body.body__dark .columna__title {
     justify-content: center;
     text-align: center;
     color: #f5f9fa;
-    background-color: #36bed9;
+    background-color: #0ED2F7;
     /*  font-weight: $densidad-normal; */
     /* border-bottom: 1px solid $border-color-opacity; */
   }
@@ -528,7 +559,7 @@ body.body__dark .about .about__content .about__description .columna__texto {
   justify-content: space-between;
 }
 .skills__content .skill__item {
-  background-color: #36bed9;
+  background-color: #0ED2F7;
   color: #323333;
   display: flex;
   flex-direction: column;
@@ -591,7 +622,7 @@ body.body__dark .about .about__content .about__description .columna__texto {
   } */
 }
 .services__content .service__item {
-  background-color: #36bed9;
+  background-color: #0ED2F7;
   text-align: center;
   padding: 40px 20px;
   box-sizing: border-box;
@@ -674,7 +705,7 @@ body.body__dark .about .about__content .about__description .columna__texto {
 }
 .portfolio__content .portfolio__item .portfolio__description .portfolio__link .portfolio__link-btn {
   display: block;
-  background-color: #36bed9;
+  background-color: #0ED2F7;
   color: #f5f9fa;
   padding: 10px;
   border-radius: 5px;
@@ -768,7 +799,7 @@ body.body__dark .about .about__content .about__description .columna__texto {
   margin-bottom: 10px;
   border: none;
   border-bottom: 1px solid rgba(245, 249, 250, 0.5);
-  background-color: #36bed9;
+  background-color: #0ED2F7;
   outline: none;
   border-radius: 5px;
   transition: 0.3 ease all;
@@ -788,7 +819,7 @@ body.body__dark .about .about__content .about__description .columna__texto {
   font-size: 16px;
   border: none;
   border-bottom: 1px solid rgba(245, 249, 250, 0.5);
-  background-color: #36bed9;
+  background-color: #0ED2F7;
   outline: none;
   transition: 0.3 ease all;
   padding: 5px;
@@ -931,11 +962,16 @@ body.body__dark .about .about__content .about__description .columna__texto {
   }
 }
 .contact {
-  background-color: #36bed9;
+  background: #B2FEFA;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0ED2F7, #B2FEFA);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .social {
-  background-color: #36bed9;
+  background-color: #0ED2F7;
 }
 
 .social__content {
